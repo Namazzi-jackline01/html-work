@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the container to center-align the form */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center vertically within the viewport */
+            width: 100%;
+        }
+
+        /* CSS for the form container */
+        .form-container {
+            background-color: rgb(155, 155, 159); /* Set the background color to blue */
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px; /* Adjust the width as needed */
+            height: 700px;
+            position: absolute;
+            top: 40px;
+        }
+
+        /* CSS for the submit button */
+        button {
+            background-color: rgb(7, 143, 61); /* Set the background color of the button to red */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            left: 200px;
+        }
+
+        /* Additional styling for labels and inputs (adjust as needed) */
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Enclose the form in a white container -->
+            <label>FIRST NAME</label>
+            <input type="text" size="9" maxlength="16" /><br>
+            <label>LAST NAME</label>
+            <input type="pass" size="9" maxlength="16" /><br>
+            <p><b>GENDER</b></p>
+            <input type="radio" id="gender" name="gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <label>EMAIL</label>
+            <input type="text" size="9" maxlength="30" /><br>
+            <label>PHONE NUMBER</label>
+            <select>
+                <option>+256</option>
+                <option>+138</option>
+                <option>+046</option>
+                <option>+241</option>
+                <option>+211</option>
+            </select><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <p><b>COURSE</b></p>
+            <input type="radio" id="course" name="course" value="introduction to IT">
+            <label for="course"> introduction to IT</label><br>
+            <input type="radio" id="course" name="course" value="chemistry">
+            <label for="cousre">chemistry</label><br>
+            <input type="radio" id="course" name="course" value="mathematics">
+            <label for="course"> mathematics</label><br>
+            <label>PASSWORD</label>
+            <input type="text" size="9" maxlength="17" /><br>
+            <h4>Please give us your feedback</h4>
+            <textarea name="comment" cols="15" rows="3">comment here</textarea><br>
+            <button>SUBMIT</button>
+            <p><a href="index.html">previouspage</a></p>
+        </div>
+    </div>
+   
+</body>
+</html>
